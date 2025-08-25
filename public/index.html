@@ -3,19 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Tu lugar de juego</title>
-  <meta name="description" content="La mejor experiencia de juego virtual en Argentina.">
-
-  <!-- METADATOS PARA REDES SOCIALES -->
-  <meta property="og:title" content="Tu lugar de juego" />
-  <meta property="og:description" content="La mejor experiencia de juego virtual en Argentina. Cargá fichas, jugá y ganá con responsabilidad." />
-  <meta property="og:image" content="https://iili.io/FZTQsZx.webp" />
-  <meta property="og:url" content="https://TU_DOMINIO.onrender.com/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tu lugar de juego" />
-  <meta name="twitter:description" content="La mejor experiencia de juego virtual en Argentina." />
-  <meta name="twitter:image" content="https://iili.io/FZTQsZx.webp" />
+  <title>FCU PLAY™ - Tu lugar de suerte</title>
+  <meta name="description" content="FCU PLAY™ - La mejor experiencia de juego virtual en Argentina.">
 
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -40,24 +29,11 @@
       width: min(45vw, 220px);
       filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
       animation: fadeZoomIn 1.2s ease forwards, logoGlow 3s ease-in-out infinite;
-      --badge-top: 16%;
-      --badge-left: 75%;
-      --badge-size: 18%;
     }
-    .logo-main {
+    .logo-facu {
       width: 100%;
       height: auto;
       display: block;
-    }
-    .badge-18-header {
-      position: absolute;
-      top: var(--badge-top);
-      left: var(--badge-left);
-      width: var(--badge-size);
-      height: auto;
-      transform: translate(-50%, -50%);
-      animation: fadeZoomIn 1.2s ease forwards;
-      animation-delay: 0.1s;
     }
 
     @keyframes fadeZoomIn { from { opacity:0; transform:scale(0.9); } to { opacity:1; transform:scale(1); } }
@@ -72,6 +48,7 @@
       opacity:0; animation:fadeZoomIn 1.2s ease forwards; animation-delay:0.3s;
       line-height:1.3;
     }
+    h1 span { display:block; font-size:4rem; margin-top:10px; }
 
     main {
       width:90%; max-width:500px;
@@ -102,74 +79,33 @@
     footer {
       text-align:center; padding:15px 0; color:#fff; font-size:0.9rem;
     }
-    footer a { color:#f5c518; text-decoration:none; font-weight:600; }
-    footer a.reglas-link {
-      color: #4FC3F7 !important;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    footer a.reglas-link:hover {
-      color: #0288d1 !important;
-      text-decoration: underline;
-    }
-    footer .socials {
-      display:flex; justify-content:center; gap:20px; margin-bottom:8px; align-items:center;
-    }
-    footer .socials img { width:32px; height:32px; vertical-align:middle; }
     footer p { margin:4px 0; opacity:0.8; font-size:0.8rem; }
-
-    @media (max-width:768px) {
-      h1{font-size:2rem;}
-      main{padding:25px;}
-      main p{font-size:1.1rem;}
-      main a.button{font-size:1.2rem; padding:14px 28px;}
-    }
-    @media (max-width:480px) {
-      h1{font-size:1.8rem;}
-      main{padding:20px;}
-      main p{font-size:1rem;}
-      main a.button{font-size:1.1rem; padding:12px 24px;}
-    }
   </style>
 </head>
 <body>
   <div id="particles-js"></div>
 
   <header>
-    <div class="logo-wrap" aria-label="Logo con distintivo +18">
-      <img src="https://iili.io/FZTQsZx.webp" alt="Logo Principal" class="logo-main" />
-      <img src="https://iili.io/FtUZvLB.png" alt="+18" class="badge-18-header" />
+    <div class="logo-wrap" aria-label="Logo FCU PLAY">
+      <img src="https://iili.io/FZTQsZx.webp" alt="FCU PLAY Logo" class="logo-facu" />
     </div>
-    <h1>Bienvenidos</h1>
+    <h1>Bienvenidos a<br><span>FCU PLAY™</span></h1>
   </header>
 
   <main>
     <p>La mejor experiencia de juego virtual en Argentina.<br />
     Cargá fichas, jugá y ganá con responsabilidad.</p>
 
-    <a href="/api/whatsapp" class="button">
+    <a onclick="getWhatsapp()" class="button">
        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
        Contactanos por WhatsApp
     </a>
   </main>
 
   <footer>
-    <p style="font-weight:bold; font-size:1.05rem; margin-bottom:8px;">
-      Seguinos en nuestras redes sociales oficiales
-    </p>
-    <div class="socials">
-      <a href="https://www.instagram.com/facu_casino?igsh=ZjU1amFsaHhyem92" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61573901987229" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook">
-      </a>
-    </div>
-    <p>
-      © 2025 - <a href="https://goo.su/XLVzrP" class="reglas-link">Reglas y condiciones</a>
-    </p>
-    <p>Jugar compulsivamente es perjudicial para la salud.  
-       Se prohíbe el ingreso a menores de 18 años.  
+    <p>© 2025 FCU PLAY™</p>
+    <p>Jugar compulsivamente es perjudicial para la salud.<br>
+       Se prohíbe el ingreso a menores de 18 años.<br>
        Juegue con responsabilidad.</p>
   </footer>
 
@@ -188,6 +124,19 @@
       "interactivity": { "events": { "onhover": { "enable": false }, "onclick": { "enable": false } } },
       "retina_detect": true
     });
+
+    // 🔗 Función para pedir número a la API
+    async function getWhatsapp() {
+      try {
+        const res = await fetch("https://facu-casino-whatsapp-api.onrender.com/api/whatsapp");
+        const data = await res.json();
+        const numeros = data.numeros;
+        const random = numeros[Math.floor(Math.random() * numeros.length)];
+        window.open(`https://wa.me/${random}?text=Hola%20me%20creas%20un%20usuario%3F`, "_blank");
+      } catch (e) {
+        alert("Error cargando WhatsApp");
+      }
+    }
   </script>
 </body>
 </html>
